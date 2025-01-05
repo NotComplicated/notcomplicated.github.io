@@ -24,7 +24,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Vite GitHub Pages Deployer
-        uses: skywarth/vite-github-pages-deployer@v1.4.0
+        uses: skywarth/vite-github-pages-deployer@master
         id: deploy_page
-      - name: dump outputs
-        run: echo "${{steps.deploy_page.outputs.github_pages_url}}"
