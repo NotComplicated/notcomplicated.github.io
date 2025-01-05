@@ -25,4 +25,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Vite GitHub Pages Deployer
         uses: skywarth/vite-github-pages-deployer@master
+        with:
+          public_base_path: './'
         id: deploy_page
