@@ -47,7 +47,7 @@ export default function Page() {
       <div className='w-full max-w-3xl'>
         <div className='p-10 flex justify-between'>
           <img
-            src='src/assets/selfie.bmp'
+            src='https://files.catbox.moe/lbv4lx.jpg'
             className='rounded-full shadow-lg shadow-black/30'
             width='150'
             height='150'
