@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Button from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
