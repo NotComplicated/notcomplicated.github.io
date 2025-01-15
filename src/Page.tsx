@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button } from '@/components/ui/button'
+import Button from '@/components/ui/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
@@ -39,33 +39,23 @@ const useDarkModeToggle = () => {
 }
 
 export default function Page() {
-  const [count, setCount] = useState(0)
   const darkModeToggle = useDarkModeToggle()
 
   return (
     <div className='flex items-center justify-center pt-10'>
       <div className='w-full max-w-3xl'>
         <div className='p-10 flex justify-between'>
-          <img
-            src='https://files.catbox.moe/lbv4lx.jpg'
-            className='rounded-full shadow-lg shadow-black/30'
-            width='150'
-            height='150'
-          />
+          <div className='flex'>
+            <img
+              src='https://files.catbox.moe/lbv4lx.jpg'
+              className='rounded-full shadow-lg shadow-black/30 max-h-[150px]'
+              width='150'
+              height='150'
+            />
+            <h1 className='text-5xl font-bold p-8'>Andres DeJesus</h1>
+          </div>
           {darkModeToggle}
         </div>
-        <h1 className='font-bold text-4xl'>Vite + React</h1>
-        <div className='card'>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className='read-the-docs'>
-          Click on the Vite and React logos to learn more
-        </p>
       </div>
     </div>
   )
